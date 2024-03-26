@@ -1,4 +1,4 @@
-#+TITLE: Template repository
+#+TITLE: Weather app
 #+AUTHOR: Bilel Hamitouche
 
-Template repository for my web dev projects.
+Simple weather app with HTML, CSS and JavaScript.
