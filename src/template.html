@@ -2,6 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="favicon.ico"
+      rel="shortcut"
+      icon=""
+      type="image/x-icon" />
+    <title>Weather app</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <aside class="sidebar">
+      <div class="search-box">
+        <input
+          class="search-bar"
+          name="search"
+          type="search"
+          value=""
+          placeholder="Enter city"
+          data-search-box />
+      </div>
+      <div class="current-weather">
+        <div class="icon">
+          <img
+            alt=""
+            src=""
+            data-current-icon />
+        </div>
+        <div
+          class="condition"
+          data-current-condition></div>
+        <div
+          class="temperature"
+          data-current-temp></div>
+        <div class="info">
+          <div
+            class="humidity"
+            data-current-humidity></div>
+          <div
+            class="wind"
+            data-current-wind></div>
+        </div>
+      </div>
+    </aside>
+    <main class="main"></main>
+  </body>
 </html>

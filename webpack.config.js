@@ -8,36 +8,37 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     rules: [
       {
-	test: /\.css$/i,
-	use: ['style-loader', 'css-loader'],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
       {
-	test: /\.js$/i,
-	exclude: /node_modules/,
-	use: {
-	  loader: "babel-loader",
-	  options: {
-	    presets: [ '@babel/preset-env' ],
-	  },
-	},
+        test: /\.js$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
       {
-	test: /\.(png|jpg|jpeg|svg|gif)$/i,
-	type: 'asset/resource',
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
+        type: 'asset/resource',
       },
       {
-	test: /\.(woff|woff2|ttf|otf|eot)$/i,
-	type: 'asset/resource',
+        test: /\.(woff|woff2|ttf|otf|eot)$/i,
+        type: 'asset/resource',
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Weather app',
       filename: 'index.html',
       template: 'src/template.html',
     }),
