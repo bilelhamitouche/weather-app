@@ -16,7 +16,6 @@ window.onload = async () => {
     displaySunriseSunset(weatherData);
     displayOverview(weatherData);
     displayForecast(weatherData);
-    console.log(weatherData.forecast.forecastday[1].day.condition.text);
   } catch (error) {
     console.log(error);
   }
@@ -33,7 +32,6 @@ searchBar.addEventListener('change', async () => {
     displaySunriseSunset(weatherData);
     displayOverview(weatherData);
     displayForecast(weatherData);
-    console.log(weatherData);
   } catch (error) {
     console.log(error);
   }
